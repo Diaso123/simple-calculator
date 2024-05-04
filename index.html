@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator | Github Project 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.js" defer></script>
+</head>
+
+<body class="h-screen flex justify-center items-center">
+    <section class="bg-black">
+        <input type="text" id="display" class="bg-slate-800 text-white font-medium p-3 border-none outline-none"
+            readonly>
+        <div class="grid grid-cols-4 gap-2 p-2">
+            <button onclick="clearDisplay()" class="bg-slate-800 rounded-full py-3 text-white font-medium">AC</button>
+            <button onclick="addToDisplay('+')" class="bg-slate-800 rounded-full py-3 text-white font-medium">+</button>
+            <button onclick="addToDisplay('-')" class="bg-slate-800 rounded-full py-3 text-white font-medium">-</button>
+            <button onclick="addToDisplay('*')" class="bg-slate-800 rounded-full py-3 text-white font-medium">*</button>
+            <button onclick="addToDisplay('/')" class="bg-slate-800 rounded-full py-3 text-white font-medium">/</button>
+            <button onclick="addToDisplay('.')" class="bg-slate-800 rounded-full py-3 text-white font-medium">.</button>
+            <button onclick="addToDisplay('7')" class="bg-slate-800 rounded-full py-3 text-white font-medium">7</button>
+            <button onclick="addToDisplay('8')" class="bg-slate-800 rounded-full py-3 text-white font-medium">8</button>
+            <button onclick="addToDisplay('9')" class="bg-slate-800 rounded-full py-3 text-white font-medium">9</button>
+            <button onclick="addToDisplay('4')" class="bg-slate-800 rounded-full py-3 text-white font-medium">4</button>
+            <button onclick="addToDisplay('5')" class="bg-slate-800 rounded-full py-3 text-white font-medium">5</button>
+            <button onclick="addToDisplay('6')" class="bg-slate-800 rounded-full py-3 text-white font-medium">6</button>
+            <button onclick="addToDisplay('1')" class="bg-slate-800 rounded-full py-3 text-white font-medium">1</button>
+            <button onclick="addToDisplay('2')" class="bg-slate-800 rounded-full py-3 text-white font-medium">2</button>
+            <button onclick="addToDisplay('3')" class="bg-slate-800 rounded-full py-3 text-white font-medium">3</button>
+            <button onclick="addToDisplay('0')" class="bg-slate-800 rounded-full py-3 text-white font-medium">0</button>
+            <button onclick="calculate()" class="bg-red-700 rounded-full py-3 text-white font-medium">=</button>
+        </div>
+    </section>
+</body>
+
+</html>
